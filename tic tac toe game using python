@@ -1,0 +1,75 @@
+l = ['-','-','-','-','-','-','-','-','-']
+t=1
+
+while t<=9:
+
+    if t%2==0:
+       position1=(int(input('player 2 enter position =')))
+       l[position1-1]='X'
+
+    else:
+       position2=(int(input('player 1 enter position =')))
+       l[position2-1]='O'
+
+    print('After',t,'turn')
+    print(l[0],'|',l[1],'|',l[2],'|')
+    print(l[3],'|',l[4],'|',l[5],'|')
+    print(l[6],'|',l[7],'|',l[8],'|')
+    if l[0]==l[1] and l[1]==l[2]:
+     if l[0]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[0]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[3]==l[4] and l[4]==l[5]:
+     if l[3]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[3]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[6]==l[7] and l[7]==l[8]:
+     if l[6]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[6]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[0]==l[3] and l[3]==l[6]:
+     if l[0]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[0]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[1]==l[4] and l[4]==l[7]:
+     if l[1]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[1]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[2]==l[5] and l[5]==l[8]:
+     if l[2]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[2]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[0]==l[4] and l[4]==l[8]:
+     if l[0]=='O':
+      print('player 1 is winner')i
+      t=10
+     elif l[0]=='X':
+      print('player 2 is winner')
+      t=10
+    if l[2]==l[4] and l[4]==l[6]:
+     if l[2]=='O':
+      print('player 1 is winner')
+      t=10
+     elif l[2]=='X':
+      print('player 2 is winner')
+      t=10
+
+    t=t+1
