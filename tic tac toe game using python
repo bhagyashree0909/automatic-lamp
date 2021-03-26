@@ -59,7 +59,7 @@ while t<=9:
       t=10
     if l[0]==l[4] and l[4]==l[8]:
      if l[0]=='O':
-      print('player 1 is winner')i
+      print('player 1 is winner')
       t=10
      elif l[0]=='X':
       print('player 2 is winner')
